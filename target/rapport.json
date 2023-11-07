@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-11-07T14:10:30.771Z",
+        "start_timestamp": "2023-11-07T16:17:02.915Z",
         "line": 3,
         "name": "Create an account with valid information",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 11259005200,
+              "duration": 8824274600,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 376519800,
+              "duration": 351695900,
               "status": "passed"
             },
             "line": 5,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 149516000,
+              "duration": 113275500,
               "status": "passed"
             },
             "line": 6,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 113177700,
+              "duration": 106710700,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 133438500,
+              "duration": 153425700,
               "status": "passed"
             },
             "line": 8,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 110879000,
+              "duration": 157832100,
               "status": "passed"
             },
             "line": 9,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 135209100,
+              "duration": 121404600,
               "status": "passed"
             },
             "line": 10,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 131779500,
+              "duration": 90128500,
               "status": "passed"
             },
             "line": 11,
@@ -109,7 +109,7 @@
           },
           {
             "result": {
-              "duration": 96621200,
+              "duration": 120982500,
               "status": "passed"
             },
             "line": 12,
@@ -121,7 +121,7 @@
           },
           {
             "result": {
-              "duration": 95050000,
+              "duration": 107118200,
               "status": "passed"
             },
             "line": 13,
@@ -133,7 +133,7 @@
           },
           {
             "result": {
-              "duration": 83403700,
+              "duration": 106041700,
               "status": "passed"
             },
             "line": 14,
@@ -145,7 +145,7 @@
           },
           {
             "result": {
-              "duration": 115724800,
+              "duration": 151834000,
               "status": "passed"
             },
             "line": 15,
@@ -157,7 +157,7 @@
           },
           {
             "result": {
-              "duration": 136900200,
+              "duration": 170686300,
               "status": "passed"
             },
             "line": 16,
@@ -169,7 +169,7 @@
           },
           {
             "result": {
-              "duration": 109880300,
+              "duration": 147436800,
               "status": "passed"
             },
             "line": 17,
@@ -181,7 +181,7 @@
           },
           {
             "result": {
-              "duration": 1217195500,
+              "duration": 1095450500,
               "status": "passed"
             },
             "line": 18,
@@ -193,7 +193,7 @@
           },
           {
             "result": {
-              "duration": 141270200,
+              "duration": 98879500,
               "status": "passed"
             },
             "line": 19,
@@ -217,20 +217,18 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-11-07T14:10:45.264Z",
-        "line": 3,
-        "name": "check login is successfuol with credentials",
+        "line": 4,
+        "name": "user is logged in",
         "description": "",
-        "id": "feature-to-test-login-functionality;check-login-is-successfuol-with-credentials",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 9622914600,
+              "duration": 8534972200,
               "status": "passed"
             },
-            "line": 4,
+            "line": 5,
             "name": "user is login in page",
             "match": {
               "location": "create.compte.steps.StepsAccount.is_login_in_page()"
@@ -239,22 +237,18 @@
           },
           {
             "result": {
-              "duration": 502631600,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 5,
-            "name": "user enters email and password",
-            "match": {
-              "location": "create.compte.steps.StepsAccount.user_enters_email_and_password()"
-            },
+            "line": 6,
+            "name": "user enters \u003cemail\u003e  and \u003cpassword\u003e",
+            "match": {},
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1662864700,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 6,
+            "line": 7,
             "name": "clicks on login button",
             "match": {
               "location": "create.compte.steps.StepsAccount.clicks_on_login_button()"
@@ -263,10 +257,10 @@
           },
           {
             "result": {
-              "duration": 143969000,
-              "status": "passed"
+              "duration": 366400,
+              "status": "skipped"
             },
-            "line": 7,
+            "line": 8,
             "name": "user is navigated in home page",
             "match": {
               "location": "create.compte.steps.StepsAccount.user_is_navigated_in_home_page()"
@@ -274,13 +268,450 @@
             "keyword": "Then "
           }
         ]
+      },
+      {
+        "start_timestamp": "2023-11-07T16:17:14.938Z",
+        "line": 23,
+        "name": "check modification of first name is successful",
+        "description": "",
+        "id": "modify-first-name;check-modification-of-first-name-is-successful;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 584100,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user navigates to profile settings",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_navigates_to_profile_settings()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 856100,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user clicks on edit profile",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_clicks_on_edit_profile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 539000,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "user enters new first name oussama",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_enters_new_first_name_oussama(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user clicks on save button",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_clicks_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user should see a success message",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_should_see_a_success_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test3"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "user is logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 8040332100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is login in page",
+            "match": {
+              "location": "create.compte.steps.StepsAccount.is_login_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user enters \u003cemail\u003e  and \u003cpassword\u003e",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "clicks on login button",
+            "match": {
+              "location": "create.compte.steps.StepsAccount.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user is navigated in home page",
+            "match": {
+              "location": "create.compte.steps.StepsAccount.user_is_navigated_in_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-11-07T16:17:23.516Z",
+        "line": 24,
+        "name": "check modification of first name is successful",
+        "description": "",
+        "id": "modify-first-name;check-modification-of-first-name-is-successful;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 991700,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "user navigates to profile settings",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_navigates_to_profile_settings()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "user clicks on edit profile",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_clicks_on_edit_profile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 17,
+            "name": "user enters new first name oussema",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "user clicks on save button",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_clicks_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "user should see a success message",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_should_see_a_success_message()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@test3"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "user is logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7026381800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is login in page",
+            "match": {
+              "location": "create.compte.steps.StepsAccount.is_login_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user enters \u003cemail\u003e  and \u003cpassword\u003e",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1090500,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "clicks on login button",
+            "match": {
+              "location": "create.compte.steps.StepsAccount.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 798300,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user is navigated in home page",
+            "match": {
+              "location": "create.compte.steps.StepsAccount.user_is_navigated_in_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-11-07T16:17:31.570Z",
+        "line": 37,
+        "name": "check modification of last name is successful",
+        "description": "",
+        "id": "modify-first-name;check-modification-of-last-name-is-successful;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1009600,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "user navigates to profile settings",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_navigates_to_profile_settings()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1019400,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "user clicks on edit profile",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_clicks_on_edit_profile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "user enters new last name taalaoui",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "user clicks on save button",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_clicks_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "user see a success message",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_see_a_success_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "user is logged in",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 10968319100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is login in page",
+            "match": {
+              "location": "create.compte.steps.StepsAccount.is_login_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user enters \u003cemail\u003e  and \u003cpassword\u003e",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 499600,
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "clicks on login button",
+            "match": {
+              "location": "create.compte.steps.StepsAccount.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 808100,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "user is navigated in home page",
+            "match": {
+              "location": "create.compte.steps.StepsAccount.user_is_navigated_in_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2023-11-07T16:17:38.611Z",
+        "line": 38,
+        "name": "check modification of last name is successful",
+        "description": "",
+        "id": "modify-first-name;check-modification-of-last-name-is-successful;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 384100,
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "user navigates to profile settings",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_navigates_to_profile_settings()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 811300,
+              "status": "skipped"
+            },
+            "line": 30,
+            "name": "user clicks on edit profile",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_clicks_on_edit_profile()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 31,
+            "name": "user enters new last name taalawi",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "user clicks on save button",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_clicks_on_save_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "user see a success message",
+            "match": {
+              "location": "create.compte.steps.EditSteps.user_see_a_success_message()"
+            },
+            "keyword": "Then "
+          }
+        ]
       }
     ],
-    "name": "feature to test login functionality",
+    "name": "modify first name",
     "description": "",
-    "id": "feature-to-test-login-functionality",
+    "id": "modify-first-name",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/project.features/login.feature",
+    "uri": "file:src/test/resources/project.features/editer.feature",
     "tags": []
   }
 ]

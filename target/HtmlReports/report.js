@@ -169,16 +169,68 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.uri("file:src/test/resources/project.features/login.feature");
+formatter.uri("file:src/test/resources/project.features/editer.feature");
 formatter.feature({
-  "name": "feature to test login functionality",
+  "name": "modify first name",
   "description": "",
   "keyword": "Feature"
 });
-formatter.scenario({
-  "name": "check login is successfuol with credentials",
+formatter.scenarioOutline({
+  "name": "check modification of first name is successful",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@test3"
+    }
+  ]
+});
+formatter.step({
+  "name": "user navigates to profile settings",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "user clicks on edit profile",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user enters new first name \u003cnew_first_name\u003e",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user clicks on save button",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user should see a success message",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "new_first_name"
+      ]
+    },
+    {
+      "cells": [
+        "oussama"
+      ]
+    },
+    {
+      "cells": [
+        "oussema"
+      ]
+    }
+  ]
+});
+formatter.background({
+  "name": "user is logged in",
+  "description": "",
+  "keyword": "Background"
 });
 formatter.step({
   "name": "user is login in page",
@@ -191,14 +243,12 @@ formatter.result({
   "status": "passed"
 });
 formatter.step({
-  "name": "user enters email and password",
+  "name": "user enters \u003cemail\u003e  and \u003cpassword\u003e",
   "keyword": "When "
 });
-formatter.match({
-  "location": "create.compte.steps.StepsAccount.user_enters_email_and_password()"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 formatter.step({
   "name": "clicks on login button",
@@ -208,7 +258,7 @@ formatter.match({
   "location": "create.compte.steps.StepsAccount.clicks_on_login_button()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "user is navigated in home page",
@@ -218,6 +268,406 @@ formatter.match({
   "location": "create.compte.steps.StepsAccount.user_is_navigated_in_home_page()"
 });
 formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "check modification of first name is successful",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@test3"
+    }
+  ]
+});
+formatter.step({
+  "name": "user navigates to profile settings",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_navigates_to_profile_settings()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user clicks on edit profile",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_clicks_on_edit_profile()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user enters new first name oussama",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_enters_new_first_name_oussama(java.lang.String)"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user clicks on save button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_clicks_on_save_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user should see a success message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_should_see_a_success_message()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "name": "user is logged in",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "user is login in page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "create.compte.steps.StepsAccount.is_login_in_page()"
+});
+formatter.result({
   "status": "passed"
+});
+formatter.step({
+  "name": "user enters \u003cemail\u003e  and \u003cpassword\u003e",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "clicks on login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "create.compte.steps.StepsAccount.clicks_on_login_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user is navigated in home page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "create.compte.steps.StepsAccount.user_is_navigated_in_home_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "check modification of first name is successful",
+  "description": "",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@test3"
+    }
+  ]
+});
+formatter.step({
+  "name": "user navigates to profile settings",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_navigates_to_profile_settings()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user clicks on edit profile",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_clicks_on_edit_profile()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user enters new first name oussema",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks on save button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_clicks_on_save_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user should see a success message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_should_see_a_success_message()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenarioOutline({
+  "name": "check modification of last name is successful",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "user navigates to profile settings",
+  "keyword": "When "
+});
+formatter.step({
+  "name": "user clicks on edit profile",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user enters new last name \u003cnew_last_name\u003e",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user clicks on save button",
+  "keyword": "And "
+});
+formatter.step({
+  "name": "user see a success message",
+  "keyword": "Then "
+});
+formatter.examples({
+  "name": "",
+  "description": "",
+  "keyword": "Examples",
+  "rows": [
+    {
+      "cells": [
+        "new_last_name"
+      ]
+    },
+    {
+      "cells": [
+        "taalaoui"
+      ]
+    },
+    {
+      "cells": [
+        "taalawi"
+      ]
+    }
+  ]
+});
+formatter.background({
+  "name": "user is logged in",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "user is login in page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "create.compte.steps.StepsAccount.is_login_in_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters \u003cemail\u003e  and \u003cpassword\u003e",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "clicks on login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "create.compte.steps.StepsAccount.clicks_on_login_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user is navigated in home page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "create.compte.steps.StepsAccount.user_is_navigated_in_home_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "check modification of last name is successful",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "user navigates to profile settings",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_navigates_to_profile_settings()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user clicks on edit profile",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_clicks_on_edit_profile()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user enters new last name taalaoui",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks on save button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_clicks_on_save_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user see a success message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_see_a_success_message()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.background({
+  "name": "user is logged in",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.step({
+  "name": "user is login in page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "create.compte.steps.StepsAccount.is_login_in_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters \u003cemail\u003e  and \u003cpassword\u003e",
+  "keyword": "When "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "clicks on login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "create.compte.steps.StepsAccount.clicks_on_login_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user is navigated in home page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "create.compte.steps.StepsAccount.user_is_navigated_in_home_page()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.scenario({
+  "name": "check modification of last name is successful",
+  "description": "",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "name": "user navigates to profile settings",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_navigates_to_profile_settings()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user clicks on edit profile",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_clicks_on_edit_profile()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user enters new last name taalawi",
+  "keyword": "And "
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.step({
+  "name": "user clicks on save button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_clicks_on_save_button()"
+});
+formatter.result({
+  "status": "skipped"
+});
+formatter.step({
+  "name": "user see a success message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "create.compte.steps.EditSteps.user_see_a_success_message()"
+});
+formatter.result({
+  "status": "skipped"
 });
 });

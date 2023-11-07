@@ -3,9 +3,12 @@
   <groupId>cucumberproject2</groupId>
   <artifactId>cucumberproject2</artifactId>
   <version>0.0.1-SNAPSHOT</version>
- 
+    	<properties>
+   <maven.compiler.source>16</maven.compiler.source>
+   <maven.compiler.target>16</maven.compiler.target>
+ </properties>
   <dependencies>
-	
+
    
 
 

@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2023-11-07T13:28:40.322Z",
+        "start_timestamp": "2023-11-07T14:10:30.771Z",
         "line": 3,
         "name": "Create an account with valid information",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 23388997100,
+              "duration": 11259005200,
               "status": "passed"
             },
             "line": 4,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 391943300,
+              "duration": 376519800,
               "status": "passed"
             },
             "line": 5,
@@ -37,7 +37,7 @@
           },
           {
             "result": {
-              "duration": 169284600,
+              "duration": 149516000,
               "status": "passed"
             },
             "line": 6,
@@ -49,7 +49,7 @@
           },
           {
             "result": {
-              "duration": 115402200,
+              "duration": 113177700,
               "status": "passed"
             },
             "line": 7,
@@ -61,7 +61,7 @@
           },
           {
             "result": {
-              "duration": 98582400,
+              "duration": 133438500,
               "status": "passed"
             },
             "line": 8,
@@ -73,7 +73,7 @@
           },
           {
             "result": {
-              "duration": 165181900,
+              "duration": 110879000,
               "status": "passed"
             },
             "line": 9,
@@ -85,7 +85,7 @@
           },
           {
             "result": {
-              "duration": 170634600,
+              "duration": 135209100,
               "status": "passed"
             },
             "line": 10,
@@ -97,7 +97,7 @@
           },
           {
             "result": {
-              "duration": 121511100,
+              "duration": 131779500,
               "status": "passed"
             },
             "line": 11,
@@ -109,7 +109,7 @@
           },
           {
             "result": {
-              "duration": 98875700,
+              "duration": 96621200,
               "status": "passed"
             },
             "line": 12,
@@ -121,7 +121,7 @@
           },
           {
             "result": {
-              "duration": 123130700,
+              "duration": 95050000,
               "status": "passed"
             },
             "line": 13,
@@ -133,7 +133,7 @@
           },
           {
             "result": {
-              "duration": 98852000,
+              "duration": 83403700,
               "status": "passed"
             },
             "line": 14,
@@ -145,7 +145,7 @@
           },
           {
             "result": {
-              "duration": 123173800,
+              "duration": 115724800,
               "status": "passed"
             },
             "line": 15,
@@ -157,7 +157,7 @@
           },
           {
             "result": {
-              "duration": 148301600,
+              "duration": 136900200,
               "status": "passed"
             },
             "line": 16,
@@ -169,7 +169,7 @@
           },
           {
             "result": {
-              "duration": 118428700,
+              "duration": 109880300,
               "status": "passed"
             },
             "line": 17,
@@ -181,7 +181,7 @@
           },
           {
             "result": {
-              "duration": 1298060800,
+              "duration": 1217195500,
               "status": "passed"
             },
             "line": 18,
@@ -193,7 +193,7 @@
           },
           {
             "result": {
-              "duration": 137109000,
+              "duration": 141270200,
               "status": "passed"
             },
             "line": 19,
@@ -211,6 +211,76 @@
     "id": "creating-a-new-user-account",
     "keyword": "Feature",
     "uri": "file:src/test/resources/project.features/compte.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-11-07T14:10:45.264Z",
+        "line": 3,
+        "name": "check login is successfuol with credentials",
+        "description": "",
+        "id": "feature-to-test-login-functionality;check-login-is-successfuol-with-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 9622914600,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user is login in page",
+            "match": {
+              "location": "create.compte.steps.StepsAccount.is_login_in_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 502631600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters email and password",
+            "match": {
+              "location": "create.compte.steps.StepsAccount.user_enters_email_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1662864700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "clicks on login button",
+            "match": {
+              "location": "create.compte.steps.StepsAccount.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 143969000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is navigated in home page",
+            "match": {
+              "location": "create.compte.steps.StepsAccount.user_is_navigated_in_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "feature to test login functionality",
+    "description": "",
+    "id": "feature-to-test-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/project.features/login.feature",
     "tags": []
   }
 ]

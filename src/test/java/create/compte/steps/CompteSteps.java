@@ -14,6 +14,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class CompteSteps {
 	WebDriver driver;
@@ -22,7 +23,9 @@ public class CompteSteps {
 	@Given("user is on the account creation page")
 	public void is_login_in_page() {
 		System.out.println("user is in the account create page");
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\otaalaoui\\Desktop\\act10\\cucumberproject2\\src\\test\\resources\\drivers\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver", "\\src\\test\\resources\\drivers\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
+
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);

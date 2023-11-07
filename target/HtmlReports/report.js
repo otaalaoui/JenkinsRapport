@@ -169,4 +169,55 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.uri("file:src/test/resources/project.features/login.feature");
+formatter.feature({
+  "name": "feature to test login functionality",
+  "description": "",
+  "keyword": "Feature"
+});
+formatter.scenario({
+  "name": "check login is successfuol with credentials",
+  "description": "",
+  "keyword": "Scenario"
+});
+formatter.step({
+  "name": "user is login in page",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "create.compte.steps.StepsAccount.is_login_in_page()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters email and password",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "create.compte.steps.StepsAccount.user_enters_email_and_password()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "clicks on login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "create.compte.steps.StepsAccount.clicks_on_login_button()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is navigated in home page",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "create.compte.steps.StepsAccount.user_is_navigated_in_home_page()"
+});
+formatter.result({
+  "status": "passed"
+});
 });
